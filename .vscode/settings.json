@@ -1,0 +1,18 @@
+{
+  "files.associations": {
+    "iostream": "cpp",
+    "sstream": "cpp",
+    "regex": "cpp",
+    "cmath": "cpp"
+  },
+  "editor.formatOnSave": false,
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "editor.formatOnType": false,
+  "github.copilot": {
+    "enable": false
+  }
+}
