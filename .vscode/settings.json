@@ -14,5 +14,8 @@
   "editor.formatOnType": false,
   "github.copilot": {
     "enable": false
+  },
+  "files.exclude": {
+    "**/*.exe": true
   }
 }
