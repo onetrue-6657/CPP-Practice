@@ -1,11 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
+typedef long long ll;
+typedef unsigned long long ull;
 
-int q[1000010], n, tmp[1000010];
+const int N = 100010;
+int n, q[N], tmp[N];
 
 void merge_sort(int q[], int l, int r) {
-    if (l >= r)
-        return;
+    if (l >= r) return ;
 
     int mid = l + r >> 1;
 
@@ -23,13 +25,14 @@ void merge_sort(int q[], int l, int r) {
     for (i = l, j = 0; i <= r; i++, j++) q[i] = tmp[j];
 }
 
-int main() {
-    scanf("%d", &n);
-    for (int i = 0; i < n; i++) scanf("%d", &q[i]);
-
+int main()
+{
+    ios::sync_with_stdio(0); // No more scanf and printf
+    cin.tie(0);              // No more binding with cout
+    cout.tie(0);             // No more binding with cin
+    cin >> n;
+    for (int i = 0; i < n; i++) cin >> q[i];
     merge_sort(q, 0, n - 1);
-
-    for (int i = 0; i < n; i++) printf("%d ", q[i]);
-
+    for (int i = 0; i < n; i++) cout << q[i] << " ";
     return 0;
-}   
+}
