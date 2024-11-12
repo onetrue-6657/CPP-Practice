@@ -6,7 +6,7 @@ typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int, int> PII;
 
-const int N = 10010, M = 100010;
+const int N = 100010, M = 1000010;
 
 int n, m;
 char p[N], s[M];
@@ -30,7 +30,7 @@ int main()
         while (j && s[i] != p[j + 1]) j = ne[j];
         if (s[i] == p[j + 1]) j++;
         if (j == n) {
-            cout << i - n << " ";
+            cout << i - n + 1 << " ";
             j = ne[j];
         }
     }
