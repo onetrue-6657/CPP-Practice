@@ -1,16 +1,31 @@
-/* Template */
+/* AcWing 840 */
 
 #include <bits/stdc++.h>
 // using namespace std;
-typedef long long ll;
-typedef unsigned long long ull;
-typedef std::pair<int, int> PII;
+#define long long ll;
+#define unsigned long long ull;
+#define pair <int, int> PII;
+
+int n, x;
+char a[2];
+std::unordered_map<int, int> m;
 
 int main()
 {
     std::ios::sync_with_stdio(0); 
     std::cin.tie(0);              
-    std::cout.tie(0);             
+    std::cout.tie(0);          
+
+    std::cin >> n;
+    while (n--) {
+        std::cin >> a >> x;
+        if (a[0] == 'I') {
+            m[x] = true;
+        } else if (a[0] == 'Q') {
+            if (m[x]) std::cout << "Yes" << std::endl;
+            else std::cout << "No" << std::endl;
+        }
+    }   
 
     return 0;
 }
