@@ -30,6 +30,7 @@ void dfs(int x)
         }
     }
 }
+
 int main()
 {
     scanf("%d", &n);
