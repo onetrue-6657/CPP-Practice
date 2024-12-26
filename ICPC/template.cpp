@@ -15,12 +15,12 @@ int main() {
 }
 
 /** 
-std::cin std::cout std::ios std::endl
-std::vector std::deque std::set std::map std::unordered_set std::unordered_map std::array
-std::sort std::find std::reverse std::swap
-std::string std::to_string
-std::pair std::tuple
-std::abs std::sqrt std::pow std::sin std::cos std::tan std::log
-std::min std::max
-std::setprecision
-*/
+ * std::cin std::cout std::ios std::endl
+ * std::vector std::deque std::set std::map std::unordered_set std::unordered_map std::array
+ * std::sort std::find std::reverse std::swap
+ * std::string std::to_string
+ * std::pair std::tuple
+ * std::abs std::sqrt std::pow std::sin std::cos std::tan std::log
+ * std::min std::max
+ * std::setprecision
+ */
